@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<filials>
+  <filial>
+    <code>7286</code>
+    <name>Первый</name>
+    <adress>Москва</adress>
+    <phone>+79203302068</phone>
+  </filial>
+  <filial>
+    <code>4363</code>
+    <name>Второй</name>
+    <adress>Москва</adress>
+    <phone>+79272183843</phone>
+  </filial>
+  <filial>
+    <code>8017</code>
+    <name>Третий</name>
+    <adress>Самара</adress>
+    <phone>+79772587277</phone>
+  </filial>
+  <filial>
+    <code>1702</code>
+    <name>Четвёртый</name>
+    <adress>Питер</adress>
+    <phone>+79666756444</phone>
+  </filial>
+  <filial>
+    <code>2264</code>
+    <name>Пятый</name>
+    <adress>Тула</adress>
+    <phone>+79860935230</phone>
+  </filial>
+  <filial>
+    <code>7864</code>
+    <name>Шестой</name>
+    <adress>Москва</adress>
+    <phone>+78475283853</phone>
+  </filial>
+</filials>

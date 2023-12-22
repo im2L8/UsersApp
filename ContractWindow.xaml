@@ -1,0 +1,51 @@
+﻿<Window x:Class="UsersApp.ContractWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Приложение для страховой компании" Height="900" Width="1440">
+
+    <Grid Background="#3A2E85">
+        <Border MinWidth="1000" Margin="20" Background="White" VerticalAlignment="Center" Padding="40" MaxWidth="1210">
+            <StackPanel>
+                <TextBlock FontSize="64" Margin="0 0 0 40" FontWeight="Bold">Заключение договора</TextBlock>
+                <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Номер договора</TextBlock>
+                <TextBlock Margin="0 0 0 20" Padding="0 3 0 3" FontSize="18" x:Name="ContractNumField"/>
+                <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Дата заключения</TextBlock>
+                <TextBlock Margin="0 0 0 20" Padding="0 3 0 3" FontSize="18" x:Name="ContractDate"/>
+                <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Сумма</TextBlock>
+                <TextBox Margin="0 0 0 20" BorderThickness="0,0,0,1" Padding="0 3 0 3" FontSize="18" x:Name="ContractPrice" TextChanged="ContractPrice_TextChanged"/>
+                <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Вид страхования</TextBlock>
+                <ComboBox Margin="0 0 0 5" FontSize="18" Padding="3 3 3 3" x:Name="TypeContract" SelectionChanged="TypeContract_SelectionChanged">
+                    <ComboBoxItem>Автострахование</ComboBoxItem>
+                    <ComboBoxItem>Здравоохранение</ComboBoxItem>
+                    <ComboBoxItem>Имущественное</ComboBoxItem>
+                    <ComboBoxItem>Ответственность</ComboBoxItem>
+                    <ComboBoxItem>Бизнес</ComboBoxItem>
+                    <ComboBoxItem>Несчастный случай</ComboBoxItem>
+                </ComboBox>
+                <TextBlock x:Name="TarifPercent"  Text="Процентная ставка: " Visibility="Hidden" Margin="0 0 0 10" FontSize="10" FontStyle="Italic" Foreground="Red"/>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Филиал</TextBlock>
+                        <ComboBox Margin="0 0 0 20" FontSize="18" Padding="3 3 3 3" x:Name="FilialContract" Width="550" HorizontalAlignment="Left" DropDownClosed="TypeFilial_SelectionChanged"></ComboBox>
+                    </StackPanel>
+                    <StackPanel HorizontalAlignment="Right">
+                        <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Агент</TextBlock>
+                        <ComboBox Margin="0 0 0 20" FontSize="18" Padding="3 3 3 3" x:Name="AgentContract" Width="550" HorizontalAlignment="Left"></ComboBox>
+                    </StackPanel>
+                </Grid>
+                <TextBlock Margin="0 0 0 5" FontSize="24" FontWeight="Bold">Итоговая сумма</TextBlock>
+                <TextBlock Margin="0 0 0 20" Padding="0 3 0 3" FontSize="18" x:Name="FinalPrice"/>
+                <Grid>
+                    <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Left" Width="90" Click="Button_Back_Click">Назад</Button>
+                    <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Right" Width="90" Click="Button_ContractDone_Click">Заключить</Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

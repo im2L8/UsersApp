@@ -1,0 +1,47 @@
+﻿<Window x:Class="UsersApp.TarifsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:UsersApp"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Приложение для страховой компании" Height="900" Width="1440">
+
+    <Grid Background="#3A2E85">
+        <Border MinWidth="1000" Margin="20" Background="White" VerticalAlignment="Center" Padding="40" MaxWidth="1210">
+            <StackPanel>
+                <TextBlock FontSize="64" Margin="0 0 0 20" FontWeight="Bold">Тарифные ставки</TextBlock>
+                <Grid Margin="0 0 0 20">
+                    <StackPanel Background="#2C17B1" Margin="0,0,770,0" Width="360">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">5%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Автострахование</TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="#2C17B1" Margin="386,0,386,0">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">3%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Здравоохранение</TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="#2C17B1" Margin="772,0,0,0">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">10%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Имущественное</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Grid Margin="0 0 0 20">
+                    <StackPanel Background="#2C17B1" Margin="0,0,770,0" Width="360">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">8%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Ответственность</TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="#2C17B1" Margin="386,0,386,0">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">12%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Бизнес</TextBlock>
+                    </StackPanel>
+                    <StackPanel Background="#2C17B1" Margin="772,0,0,0">
+                        <TextBlock Foreground="White" FontSize="48" Margin="20 20 20 20">1%</TextBlock>
+                        <TextBlock Foreground="White" FontSize="18" Margin="20 20 20 20">Несчастный случай</TextBlock>
+                    </StackPanel>
+                </Grid>
+                <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Left" Width="90" Click="Button_Back_Click">Назад</Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

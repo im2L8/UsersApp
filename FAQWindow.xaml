@@ -1,0 +1,30 @@
+﻿<Window x:Class="UsersApp.FAQWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Приложение для страховой компании" Height="900" Width="1440">
+
+    <Grid Background="#3A2E85">
+        <Border MinWidth="1000" Margin="20" Background="White" VerticalAlignment="Center" Padding="40" MaxWidth="1210">
+            <StackPanel>
+                <TextBlock FontSize="64" Margin="0 0 0 40" FontWeight="Bold">Ответы на популярные вопросы</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="24" FontWeight="Bold">1. Что такое страхование?</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="18">Страхование – это финансовый механизм, при котором страховая компания предоставляет застрахованному лицу защиту от финансовых потерь, связанных с определенными рисками.</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="24" FontWeight="Bold">2. Какие виды страхования существуют?</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="18">Существует множество видов страхования, включая автомобильное страхование, медицинское страхование, страхование имущества, страхование от несчастных случаев и другие.</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="24" FontWeight="Bold">3. Почему мне может понадобиться страхование?</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="18">Страхование обеспечивает финансовую защиту от неожиданных событий, таких как аварии, болезни, утрата имущества и другие риски, минимизируя финансовые потери.</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="24" FontWeight="Bold">4. Какие документы мне понадобятся для оформления страховки?</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="18">Документы могут варьироваться в зависимости от типа страхования, но обычно требуется удостоверение личности, документы на застрахованный объект и другие связанные ситуацией документы.</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="24" FontWeight="Bold">5. Что делать в случае страхового случая?</TextBlock>
+                <TextBlock TextWrapping="Wrap" FontSize="18" Margin="0 0 0 20">В случае страхового случая необходимо связаться со страховой компанией как можно скорее, предоставить необходимую документацию и следовать инструкциям по урегулированию убытков.</TextBlock>
+                <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Left" Width="90" Click="Button_Back_Click">Назад</Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

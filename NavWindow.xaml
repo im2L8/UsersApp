@@ -1,0 +1,34 @@
+﻿<Window x:Class="UsersApp.NavWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Приложение для страховой компании" Height="900" Width="1440">
+
+    <Grid Background="#3A2E85">
+        <Border MinWidth="1000" Margin="20" Background="White" VerticalAlignment="Center" Padding="40" MaxWidth="1210">
+            <StackPanel>
+                <TextBlock FontSize="64" Margin="0 0 0 40" FontWeight="Bold">Страховая компания <LineBreak/> с 20 летним опытом</TextBlock>
+                <Grid Margin="0 0 0 20">
+                    <Button MinHeight="40" Width="100" Margin="0,0,1030,0" Content="Филиалы" Background="White" Click="Button_Filial_Click"/>
+                    <Button MinHeight="40" Width="100" Margin="114,0,916,0" Content="Агенты" Background="White" Click="Button_Agents_Click"/>
+                    <Button MinHeight="40" Width="100" Margin="228,0,802,0" Content="Мои договоры" Background="White" Click="Button_MyInsurens_Click"/>
+                    <Button MinHeight="40" Width="100" Margin="342,0,688,0" Content="Правила" Background="White" Click="Button_Rules_Click"/>
+                </Grid>
+                <Grid Margin="0 0 0 20">
+                    <Button MinHeight="150" Width="363" Margin="0,0,767,0" FontSize="18" Background="#2C17B1" Foreground="White" Click="Button_Insur_Click">Заключение договора о страховании</Button>
+                    <Button MinHeight="150" Width="363" Margin="384,0,383,0" FontSize="18" Background="#2C17B1" Foreground="White" Click="Button_Salarys_Click">Зарплата агентов</Button>
+                    <Button MinHeight="150" Width="363" Margin="767,0,0,0" FontSize="18" Background="#2C17B1" Foreground="White" Click="Button_Tarif_Click">Тарифные ставки</Button>
+                </Grid>
+                <Grid>
+                    <Button MinHeight="150" Margin="0,0,384,0" Background="#2C17B1" FontSize="18" Foreground="White">Мы успешно оформили более 2 000 страховых договоров каждого вида страхования</Button>
+                    <Button MinHeight="150" Width="363" Margin="767,0,0,0" FontSize="18" Background="#2C17B1" Foreground="White" Click="Button_Questions_Click">Ответы на популярные вопросы</Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿<Window x:Class="UsersApp.AgentsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:UsersApp"
+        mc:Ignorable="d" 
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Title="Приложение для страховой компании" Height="900" Width="1440">
+
+    <Grid Background="#3A2E85">
+        <Border MinWidth="1000" Margin="20" Background="White" VerticalAlignment="Center" Padding="40" MaxWidth="1210">
+            <StackPanel>
+                <Grid Margin="0 0 0 40">
+                    <TextBlock HorizontalAlignment="Left" FontSize="64" FontWeight="Bold">Список агентов</TextBlock>
+                    <Button Click="Button_1st_Click" HorizontalAlignment="Right" FontSize="14" Background="#2C17B1" Foreground="White" Width="100">Первый</Button>
+                    <Button Click="Button_2nd_Click" HorizontalAlignment="Left" FontSize="14" Background="#2C17B1" Foreground="White" Width="100" Margin="916,0,0,0">Второй</Button>
+                    <Button Click="Button_3rd_Click" FontSize="14" Background="#2C17B1" Foreground="White" Width="100" Margin="802,0,228,0">Третий</Button>
+                    <Button Click="Button_Reload_Click" HorizontalAlignment="Left" FontSize="14" Background="#2C17B1" Foreground="White" Width="100" Margin="688,0,0,0">Обновить</Button>
+                </Grid>
+                <DataGrid x:Name="AgentsData" Margin="0 0 0 20"></DataGrid>
+                <Grid>
+                    <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Left" Width="90" Click="Button_Back_Click">Назад</Button>
+                    <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Center" Width="300" Click="Button_Edit_Click">Изменить данные</Button>
+                    <Button MinHeight="40" FontSize="14" Background="#2C17B1" Foreground="White" HorizontalAlignment="Right" Width="90" Click="Button_ToAddAgents_Click">Добавить</Button>
+                </Grid>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
